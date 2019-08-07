@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mi Primera Pagina Web</title>
+<!-- enlace para descargar las fuentes de los iconos que van en el footer-->
+    <script src="https://kit.fontawesome.com/43f3cc2ec8.js"></script>
 </head>
+
 <body>
-    <div>   <!-- es recomendable colocar un div que englobe toda la pagina para controlar el tamaño de la pagina -->
+    <div>
+        <!-- es recomendable colocar un div que englobe toda la pagina para controlar el tamaño de la pagina -->
+        <!-- HEADER -->
         <header>
             <a href="index.html">Mis Perros</a>
             <nav>
@@ -19,17 +25,108 @@
                 </ul>
             </nav>
         </header>
+        <!-- MAIN -->
         <main>
             <section>
-                <img src="https://loremflickr.com/1140/840/woman" alt="">
+                <figure>
+                    <img src="https://loremflickr.com/1140/840/woman" width="1140" height="840"
+                        alt="este es un texto que aparece cuando no se encuentra el archivo escrito en el parametro source o src">
+                </figure>
                 <div>
                     <h1>Mascotas y Niños Felices</h1>
                     <p>¿Cual es la mejor mascota para usted?</p>
-                    <a href="#"></a>
+                    <a href="#">Leer mas</a>
                 </div>
             </section>
+            <section>
+                <h2>Bienvenido a Nuestro Club</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, tempora dolores, culpa maxime sed
+                    consequuntur, natus mollitia iste perferendis deserunt unde ducimus exercitationem. Repudiandae
+                    voluptates laudantium tempora, commodi ducimus exercitationem.</p>
+                <section>
+                    <!-- esto se maneja como seccion porque luego podremos manejarlo de manera independiente con el css, si no hubiese section si queremos dar espaciado entre titulo H3 y el parrafo anterior seria muy complicado-->
+                    <h3>Lo ultimo de nuestro blog</h3>
+                    <!-- se utiliza ARTICLE porque la seccion es un elemento de por si independiente en informacion y ademas queremos que la figura es un elemento que debe resaltar dentro de la web-->
+                    <article>
+                        <!-- se utiliza FIGURE porque queremos que la imagen que se utiliza en la seccion sirva para que resalte con el buscador web, se debe colocar FIGURE a todas las imagenes que queremos que comunique y sea importante en nuestra web, las imagenes del header y footer no son necesarios que vayan dentro de un FIGURE-->
+                        <figure>
+                            <img src="https://loremflickr.com/200/175/woman1" width="200" height="175" alt="">
+                            <!--se usa FIGCAPTION para indicar el comentario que queremos que acompañe a nuestra imagen-->
+                            <figcaption>Elige tu mascota perfecta</figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="https://loremflickr.com/200/175/woman2" width="200" height="175" alt="">
+                            <figcaption>Elige tu mascota perfecta</figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="https://loremflickr.com/200/175/woman3" width="200" height="175" alt="">
+                            <figcaption>Elige tu mascota perfecta</figcaption>
+                        </figure>
+                    </article>
+                </section>
+            </section>
+            <section>
+                <h2>Para mucho de nosotros la mascota no son simples compañeros, son miembros </h2>
+                <article>
+                    <figure>
+                        <img src="https://loremflickr.com/166/166/woman4" width="166" height="166" alt="">
+                        <figcaption>Chocolate</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://loremflickr.com/166/166/woman5" width="166" height="166" alt="">
+                        <figcaption>Chocolate</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://loremflickr.com/166/166/woman6" width="166" height="166" alt="">
+                        <figcaption>Chocolate</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <img src="https://loremflickr.com/166/166/woman5" width="166" height="166" alt="">
+                        <figcaption>Chocolate</figcaption>
+                    </figure>
+                </article>
+            </section>
         </main>
-    </div>    
+        <!--FOOTER-->
+        <footer>
+            <p>
+                <a href="#">Hecho por Manuel MWPP</a>
+            </p>
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 
 </body>
+
 </html>
