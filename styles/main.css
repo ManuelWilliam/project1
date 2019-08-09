@@ -1,0 +1,79 @@
+/*Atributos Globales*/
+/*
+Herencia, es una particularidad que indica que los elementos hijos hereda el comportamiento o parametro del padre
+en este caso la etiqueta "body" es el padre de todos los elementos de la pagina
+*/
+body{
+    font-family: arial;
+    font-size: 13px;
+}
+
+a{
+    color:white;    /* color de la letra de la etiqueta "a" */
+    text-decoration: none;  /*para quitar el subrayado de la linea*/
+}
+
+
+/*
+HEADER
+*/
+/*
+Selector, es cuando se escribe el nombre del elemento HTML en el CSS para darle un parametro y su valor
+*/
+/*
+Estilos para modelar el layout:
+atributos FLEXBOX: permiten ordenar los elementos de manera vertical u horizontal
+el atributo DISPLAY se le asigna el valor FLEX por default, esto indica que se ordenan los elementos uno al aldo del otro horizontalmente
+*/
+header{
+    background-color: red;
+    display:flex;  /*ordena los elementos del header uno al lado del otro en horizontal
+    esto se aplica siempre al padre de los elementos contenidos o que se quiere que se alineen*/
+    justify-content: space-between; /*alinea los elementos en el eje horizontal, colocando espacios horizontales iguales entre cada elemento */
+    align-items: center;    /*alinea los elementos del header en el eje vertical*/
+    height: 64px;   /*se define la altura del header*/
+    padding-right: 20px;
+    padding-left: 20px;
+    /*se puede declarar las lineas de arriba de la siguiente forma
+    padding: 0 20px;
+    */
+}
+header .logo{
+    font-size: 16px;
+}
+header .logo i{
+    font-size: 30px;
+}
+header ul{      /*con esta cabecera, le indicamos que vamos a modificar los atributos de todos los elementos "UL" del Header
+    el elemento "UL" es el padre que contiene a todos los elementos "LI" que a su vez contienen los elementos de texto de cada menu*/
+    display:flex;
+}
+
+header li{
+    margin-left: 10px;
+}
+/*
+Estilos para modelado de cajas:
+Margin --> esta propiedad le agrega mas espacio "margen" a la parte superior de la caja del NAV
+Padding --> esta propiedad define el margen interno de la caja
+Border --> esta propiedad define el estilo del borde, ancho del borde
+*/
+
+/*
+nav{
+    margin-top:50px;    
+}
+*/
+
+/*
+MAIN
+*/
+.banner{
+    height: 300px;
+    overflow: hidden;   /*oculta las regiones de imagen que no entran en la caja del elemento*/
+    }
+.banner img {
+    object-fit: cover;  /*centra la imagen, dejando fuera de la vista la region superior e inferior si la imagen no entra en la caja*/
+    width:100%;
+    height: 300px;
+}

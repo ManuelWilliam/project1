@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mi Primera Pagina Web</title>
-<!-- enlace para descargar las fuentes de los iconos que van en el footer-->
+    <!-- enlace para descargar las fuentes de los iconos que van en el footer-->
     <script src="https://kit.fontawesome.com/43f3cc2ec8.js"></script>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
@@ -15,10 +17,15 @@
         <!-- es recomendable colocar un div que englobe toda la pagina para controlar el tamaño de la pagina -->
         <!-- HEADER -->
         <header>
-            <a href="index.html">Mis Perros</a>
+            <a class="logo" href="index.html">  <!--se ha indicado el atributo CLASS para indicar que este elemento "a"
+            se desliga de los otros elementos "a" que hay en el header-->
+                <i class="fas fa-dog"></i> Mis Perros
+            </a>
+            <!--modelo de caja INLINE-->
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
+                    <!--Modelo de caja en Bloque-->
                     <li><a href="#">Mascotas</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contacto</a></li>
@@ -27,7 +34,7 @@
         </header>
         <!-- MAIN -->
         <main>
-            <section>
+            <section class="banner">
                 <figure>
                     <img src="https://loremflickr.com/1140/840/woman" width="1140" height="840"
                         alt="este es un texto que aparece cuando no se encuentra el archivo escrito en el parametro source o src">
@@ -126,7 +133,6 @@
             </ul>
         </footer>
     </div>
-
 </body>
 
 </html>
