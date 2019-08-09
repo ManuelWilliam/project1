@@ -17,7 +17,8 @@
         <!-- es recomendable colocar un div que englobe toda la pagina para controlar el tamaño de la pagina -->
         <!-- HEADER -->
         <header>
-            <a class="logo" href="index.html">  <!--se ha indicado el atributo CLASS para indicar que este elemento "a"
+            <a class="logo" href="index.html">
+                <!--se ha indicado el atributo CLASS para indicar que este elemento "a"
             se desliga de los otros elementos "a" que hay en el header-->
                 <i class="fas fa-dog"></i> Mis Perros
             </a>
@@ -54,54 +55,58 @@
                     <!-- esto se maneja como seccion porque luego podremos manejarlo de manera independiente con el css, si no hubiese section si queremos dar espaciado entre titulo H3 y el parrafo anterior seria muy complicado-->
                     <h3>Lo ultimo de nuestro blog</h3>
                     <!-- se utiliza ARTICLE porque la seccion es un elemento de por si independiente en informacion y ademas queremos que la figura es un elemento que debe resaltar dentro de la web-->
-                    <article>
-                        <!-- se utiliza FIGURE porque queremos que la imagen que se utiliza en la seccion sirva para que resalte con el buscador web, se debe colocar FIGURE a todas las imagenes que queremos que comunique y sea importante en nuestra web, las imagenes del header y footer no son necesarios que vayan dentro de un FIGURE-->
-                        <figure>
-                            <img src="https://loremflickr.com/200/175/woman1" width="200" height="175" alt="">
-                            <!--se usa FIGCAPTION para indicar el comentario que queremos que acompañe a nuestra imagen-->
-                            <figcaption>Elige tu mascota perfecta</figcaption>
-                        </figure>
-                    </article>
-                    <article>
-                        <figure>
-                            <img src="https://loremflickr.com/200/175/woman2" width="200" height="175" alt="">
-                            <figcaption>Elige tu mascota perfecta</figcaption>
-                        </figure>
-                    </article>
-                    <article>
-                        <figure>
-                            <img src="https://loremflickr.com/200/175/woman3" width="200" height="175" alt="">
-                            <figcaption>Elige tu mascota perfecta</figcaption>
-                        </figure>
-                    </article>
+                    <div class="noticias">
+                        <article>
+                            <!-- se utiliza FIGURE porque queremos que la imagen que se utiliza en la seccion sirva para que resalte con el buscador web, se debe colocar FIGURE a todas las imagenes que queremos que comunique y sea importante en nuestra web, las imagenes del header y footer no son necesarios que vayan dentro de un FIGURE-->
+                            <figure>
+                                <img src="https://loremflickr.com/200/175/woman1" width="200" height="175" alt="">
+                                <!--se usa FIGCAPTION para indicar el comentario que queremos que acompañe a nuestra imagen-->
+                                <figcaption>Elige tu mascota perfecta</figcaption>
+                            </figure>
+                        </article>
+                        <article>
+                            <figure>
+                                <img src="https://loremflickr.com/200/175/woman2" width="200" height="175" alt="">
+                                <figcaption>Elige tu mascota perfecta</figcaption>
+                            </figure>
+                        </article>
+                        <article>
+                            <figure>
+                                <img src="https://loremflickr.com/200/175/woman3" width="200" height="175" alt="">
+                                <figcaption>Elige tu mascota perfecta</figcaption>
+                            </figure>
+                        </article>
+                    </div>
                 </section>
             </section>
             <section>
                 <h2>Para mucho de nosotros la mascota no son simples compañeros, son miembros </h2>
-                <article>
-                    <figure>
-                        <img src="https://loremflickr.com/166/166/woman4" width="166" height="166" alt="">
-                        <figcaption>Chocolate</figcaption>
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                        <img src="https://loremflickr.com/166/166/woman5" width="166" height="166" alt="">
-                        <figcaption>Chocolate</figcaption>
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                        <img src="https://loremflickr.com/166/166/woman6" width="166" height="166" alt="">
-                        <figcaption>Chocolate</figcaption>
-                    </figure>
-                </article>
-                <article>
-                    <figure>
-                        <img src="https://loremflickr.com/166/166/woman5" width="166" height="166" alt="">
-                        <figcaption>Chocolate</figcaption>
-                    </figure>
-                </article>
+                <div class="producto">
+                    <article>
+                        <figure>
+                            <img src="https://loremflickr.com/166/166/woman4" width="166" height="166" alt="">
+                            <figcaption>Chocolate</figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="https://loremflickr.com/166/166/woman5" width="166" height="166" alt="">
+                            <figcaption>Chocolate</figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="https://loremflickr.com/166/166/woman6" width="166" height="166" alt="">
+                            <figcaption>Chocolate</figcaption>
+                        </figure>
+                    </article>
+                    <article>
+                        <figure>
+                            <img src="https://loremflickr.com/166/166/woman5" width="166" height="166" alt="">
+                            <figcaption>Chocolate</figcaption>
+                        </figure>
+                    </article>
+                </div>
             </section>
         </main>
         <!--FOOTER-->
